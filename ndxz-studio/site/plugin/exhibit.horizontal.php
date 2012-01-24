@@ -48,7 +48,9 @@ class Horizontally
 			$temp_x = $go['media_x'] + $this->picture_block_padding_right;
 			$this->final_img_container += ($go['media_x'] + $this->picture_block_padding_right);
 		
-			$a .= "<div class='picture_holder' style='width: {$temp_x}px;'>\n";
+			# thue 12.01.22, no width, bilderabstand über picture_holder im CSS
+			#$a .= "<div class='picture_holder' style='width: {$temp_x}px;'>\n";
+			$a .= "<div class='picture_holder' style=''>\n";
 			$a .= "<div class='picture' style='width: {$go[media_x]}px;'>\n";
 			$a .= "<img src='" . BASEURL . GIMGS . "/$go[media_file]' width='$go[media_x]' height='$go[media_y]' alt='" . BASEURL . GIMGS . "/$go[media_file]' />\n";
 			$a .= "<div class='captioning'>$title</div>\n";
