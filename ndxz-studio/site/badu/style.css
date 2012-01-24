@@ -14,52 +14,103 @@ body {
 	font-size: 10px;
 	font-family: Verdana, sans-serif;
 	background: #fff;
+	line-height: 160%;
 }
 
 body.section-1 { }
 body.section-2 { }
 body.section-3 { }
 
-a:link { text-decoration: none; }
+/*
+
 a:active { text-decoration: none; }
 a:visited { text-decoration: none; color: #666; }
 a:hover { text-decoration: underline; }
+*/
+a:link { text-decoration: none; }
+a:active {
+    background: #000000;
+    color: #FFFFFF;
+}
+a:hover {
+    background: #084B8A;
+    color: #FFFFFF;
+}
+
+div#menu  a {
+	color: #ffffff;
+}
+
+#menu ul li.section-title {
+    border-top: 3px solid white;
+    color: white;    
+    font-size: medium;
+    font-style: normal;
+    font-variant: small-caps;
+    letter-spacing: 3px;
+    line-height: 15pt;
+    list-style: none outside none;
+	display: none;
+}
+
+#buildwith {
+    bottom: 2px;
+    position: absolute;
+}
+
 
 a img { border: none; }
 
-#menu {
-    width: 215px;
-    overflow: auto;
-    top: 0;
-    bottom: 0;
-	left: 0;
-    position: fixed;
-    height: 100%;
-	background-color: #fff;
+div#content div.container {
+	padding: 0px 0px 0px 0px;
 }
+
+
+#menu {
+    width: 140px;
+    overflow: auto;
+    top: 20px;
+    bottom: 0;
+    left: 20px;
+    position: fixed;
+    height: 400px;
+    padding: 160px 16px 0 16px;
+    background-image: url(BD_menue.png);
+	z-index: 999;
+}
+
+
 
 #menu ul {
 	list-style: none;
 	margin: 0 0 12px 0;
 }
 
-#menu ul li.section-title { }
+
+#menu ul li.section-title { 
+	font-size: 0;
+	line-height: 1.5 em;	
+	}
+	
+#menu div.container {
+		padding: 0;
+		color: #FFFFFF;
+}
+
 
 #content {
     height: 100%;
-    margin: 0 0 0 215px;
-    top: 0;
-}
+    margin: 0 0 0 206px;  
+	position: relative;
+    top: 20px;
+	}
 
-.container {
-    padding: 5px 5px 25px 5px;
-}
-
+	
 #content p { width: 400px; margin-bottom: 9px; }
 
 p {
     margin: 0 0 9px 0;
-}
+	}
 
 h1 { font-size: 32px; }
 h2 { font-size: 24px; }
@@ -67,6 +118,15 @@ h3 { font-size: 16px; }
 h4 { font-size: 12px; }
 
 #img-container	{ margin: 0; padding: 0; }
-#img-container p	{ width: 400px; margin: 0; padding: 0 0 12px 0; }
+#img-container p	{ margin: 0; padding: 0 0 12px 0; }
+#img-container #text , #img-container div#text p {
+    float: left;
+	padding-right: 16px;
+    width: 200px !important;
+	}
+
+div.picture_holder {
+	margin: 0 16px 0 0;
+}
 
 #once { clear: left; }

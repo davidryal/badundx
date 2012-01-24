@@ -37,7 +37,7 @@ $(document).ready(function()
 <%obj_ibot%>
 
 <!-- you must provide a link to Indexhibit on your site someplace - thank you -->
-<ul>
+<ul id='buildwith'>
 <li>Built with <a href='http://www.indexhibit.org/'>Indexhibit</a></li>
 </ul>
 
